@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+  <body>
+
+    <header>
+
+      <h2 id="page-title">Título</h2>
+      <p id="paragraph">Dê uma cor para este parágrafo!</p>
+      <h4 id="subtitle">Subtítulo</h4>
+      <p id="second-paragraph">Segundo parágrafo!</p>
+    </header>
+
+    <script>
+      const paragraph = document.getElementById("paragraph");
+      paragraph.style.color = "red";
+
+      const title = document.getElementById("page-title");
+      title.innerText = "Solo Leveling"
+
+      const secondParagraph = document.getElementById("second-paragraph");
+      secondParagraph.innerText = "É um webtoon muito conhecido e aclamado pelos fãs.";
+      secondParagraph.style.color = "gray";
+      secondParagraph.style.border = "2px solid red";
+      secondParagraph.style.width = "fit-content"
+      secondParagraph.style.padding = "5px"
+
+      const subtitle = document.getElementById('subtitle');
+      subtitle.innerText = "Sobre:";
+      subtitle.style.width = "fit-content"
+      subtitle.style.padding = "5px"
+      subtitle.style.borderRadius = "10px"
+      subtitle.style.backgroundColor = "black"
+      subtitle.style.color = "white"
+      
+
+
+
+    </script>
+
+  </body>
+
+</html>
