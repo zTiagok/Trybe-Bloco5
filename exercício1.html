@@ -118,10 +118,49 @@
       }
 
       // 4. Adicione a tag p como filho do section criado no passo 3 e coloque algum texto;
+
+      function addP()
+      {
+
+        const element = document.querySelector('.center-content')
+        const tag = document.createElement('p')
+
+        tag.innerText = "Olá, este texto é apenas para fins da complexão do exercício."
+
+        element.appendChild(tag)
+
+        return;
+
+        // FEITO!
+      }
+
       // 5. Adicione a tag section com a classe left-content como filho da tag main criada no passo 2;
+
+      function addSection2()
+      {
+
+        const element = document.querySelector('.main-content')
+        const tag = document.createElement('section')
+
+        tag.className = 'left-content'
+
+        element.appendChild(tag)
+
+        return;
+
+        // FEITO!
+      }
+
       // 6. Adicione a tag section com a classe right-content como filho da tag main criada no passo 2;
+      
+      
+      
       // 7. Adicione uma imagem com src configurado para o valor https://picsum.photos/200 e classe small-image . Esse elemento deve ser filho do section criado no passo 5;
+      
+      
       // 8. Adicione uma lista não ordenada com os valores de 1 a 10 por extenso, ou seja, um , dois , três , ... como valores da lista. Essa lista deve ser filha do section criado no passo 6;
+      
+      
       // 9. Adicione 3 tags h3 , todas sendo filhas do main criado no passo 2.
 
 
@@ -129,6 +168,8 @@
       addH1()
       addMain()
       addSection()
+      addP()
+      addSection2()
     </script>
   </body>
 </html>
