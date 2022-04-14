@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+
+    body
+    {
+      background-color:black;
+      color: white;
+    }
+    
+  </style>
+  
+</head>
+  <body>
+
+    <main id="paiDoPai">
+
+      <section id="pai">
+
+        <section id="primeiroFilho"></section>
+
+        <section id="elementoOndeVoceEsta">
+
+          <section id="primeiroFilhoDoFilho"></section>
+
+          <section id="segundoEUltimoFilhoDoFilho"></section>
+
+        </section>
+
+        Atenção!
+
+        <section id="terceiroFilho"></section>
+
+        <section id="quartoEUltimoFilho"></section>
+
+      </section>
+      
+    </main>
+
+    <script>
+
+      // 1. Acesse o elemento elementoOndeVoceEsta .
+
+      function whereYouAre()
+      {
+
+        const elemento = document.getElementById("elementoOndeVoceEsta")
+
+        return console.log(elemento) 
+
+        // FEITO!
+      }
+
+
+      // 2. Acesse pai a partir de elementoOndeVoceEsta e adicione uma color a ele.
+
+      function changeColor()
+      {
+
+        const elemento = document.getElementById("elementoOndeVoceEsta")
+
+        return elemento.parentElement.style.color = "red"
+
+        // FEITO!
+      }
+
+
+      // 3. Acesse o primeiroFilhoDoFilho e adicione um texto a ele. Você se lembra dos vídeos da aula anterior, como fazer isso?
+
+      function changeChildText()
+      {
+
+        const elemento = document.getElementById('elementoOndeVoceEsta').firstElementChild
+
+        return elemento.innerHTML = "Olá, sou o Filho do Filho!"
+
+        // FEITO!
+      }
+
+
+      // 4. Acesse o primeiroFilho a partir de pai .
+
+      function accessChildByParent()
+      {
+
+
+        const elemento = document.querySelector('#pai')
+
+        return elemento.firstElementChild
+
+        // FEITO!
+      }
+
+
+      // 5. Agora acesse o primeiroFilho a partir de elementoOndeVoceEsta .
+
+      function accessFirstChild()
+      {
+
+        const elemento = document.querySelector("#elementoOndeVoceEsta")
+
+        return elemento.previousElementSibling
+
+      // FEITO!
+      }
+
+
+      // 6. Agora acesse o texto Atenção! a partir de elementoOndeVoceEsta .
+
+      function accessTextAttention()
+      {
+
+        const elemento = document.querySelector("#elementoOndeVoceEsta")
+
+        return elemento.parentElement.innerText
+
+        // FEITO!
+      }
+
+      // 7. Agora acesse o terceiroFilho a partir de elementoOndeVoceEsta .
+
+      function accessThirdChild()
+      {
+
+        const elemento = document.querySelector('#elementoOndeVoceEsta')
+
+        return elemento.nextElementSibling
+
+        // FEITO!
+      }
+
+      // 8. Agora acesse o terceiroFilho a partir de pai .
+      
+      function accessThirdChildByParent()
+      {
+
+        const elemento = document.getElementById("pai")
+
+        return elemento.lastElementChild.previousElementSibling
+
+        // FEITO!
+      }
+
+    
+    </script>
+
+  </body>
+
+</html>
+
+
+
