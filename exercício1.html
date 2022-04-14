@@ -88,12 +88,12 @@
       function addMain()
       {
 
-        const elemento = document.querySelector('body')
+        const element = document.querySelector('body')
         const tag = document.createElement('main')
 
         tag.className = "main-content"
 
-        elemento.appendChild(tag)
+        element.appendChild(tag)
 
         return;
 
@@ -184,7 +184,50 @@
 
       // 8. Adicione uma lista não ordenada com os valores de 1 a 10 por extenso, ou seja, um , dois , três , ... como valores da lista. Essa lista deve ser filha do section criado no passo 6;
       
+      function addUnorderedList()
+      {
+
+        const element = document.querySelector('.right-content')
+        const tag = document.createElement('ul')
+        let array = ['Um', 'Dois', 'Três', 'Quatro', 'Cinco', 'Seis', 'Sete', 'Oito', 'Nove', 'Dez']
+
+        element.appendChild(tag)
+
+        for (let index in array)
+        {
+          let list = document.createElement('li')
+          tag.appendChild(list)
+          list.innerText = array[index]
+
+        }
+
+        return;
+
+        // FEITO!
+      }
+
       // 9. Adicione 3 tags h3 , todas sendo filhas do main criado no passo 2.
+
+      function addH3()
+      {
+
+        const element = document.querySelector('.main-content')
+        let array = []
+      
+        for (let index = 0; index < 3; index += 1)
+        {
+
+          array.push(document.createElement('h3'))
+
+          element.appendChild(array[index])
+
+          array[index].className = 'minor-title'
+        }
+
+        return;
+        
+        // FEITO!
+      }
 
 
 
@@ -195,6 +238,8 @@
       addSection2()
       addSection3()
       addImage()
+      addUnorderedList()
+      addH3()
     </script>
   </body>
 </html>
